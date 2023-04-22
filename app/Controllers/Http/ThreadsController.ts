@@ -117,7 +117,7 @@ export default class ThreadsController {
       })
     } catch (error) {
       if (error.name === 'UnauthorizedException') {
-        return response.status(error.status).json({
+        return response.json({
           message: error.message,
         })
       } else {

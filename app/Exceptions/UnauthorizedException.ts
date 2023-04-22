@@ -18,6 +18,6 @@ export default class UnauthorizedException extends Exception {
   }
 
   public async handle(error: this, {}) {
-    return error.message
+    return error
   }
 }
